@@ -8,5 +8,5 @@ def fizzbuzz():
             continue
         elif i % 3 == 0:
             print("Fuzz",end="")
-        ptint(i,end=" ")
+        print(i,end=" ")
 fizzbuzz()
