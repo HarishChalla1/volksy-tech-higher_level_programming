@@ -1,4 +1,4 @@
-#!/usr/bin/pythpon3
+#!/usr/bin/python3
 import sys
 length = len(sys.argv)
 if length <= 1:
