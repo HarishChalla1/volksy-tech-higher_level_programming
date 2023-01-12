@@ -4,8 +4,7 @@
 
 class Square:
     """string size"""
-
-    def __init__(self, size=0):
+    def __init__(self, size=0):
         self.size = size
 
     @property
@@ -22,4 +21,3 @@ class Square:
 
     def area(self):
         return self.__size * self.__size
-
