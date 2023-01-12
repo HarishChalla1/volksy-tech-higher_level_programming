@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""size validation"""
+
+
 class Square:
     """square validation"""
     def __init__(self, size=0):
