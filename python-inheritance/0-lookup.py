@@ -1,4 +1,4 @@
-<S-F12>#!/usr/bin/python3
+#!/usr/bin/python3
 """Lookup
 """
 
