@@ -4,7 +4,7 @@
 """
 
 
-def text_indentation(text):
+def text_iclearndentation(text):
     """ prints "text" with 2 newlines after each of these char: ['.', '?', ':']
     checks if "text" is a str
     first loop removes spaces after each required chars
