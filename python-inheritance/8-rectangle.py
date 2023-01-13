@@ -1,17 +1,16 @@
 #!/usr/bin/python3
-"""BaseGeometry
+"""Rectangle inherits from BaseGeometry
 """
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class BaseGeometry:
-    """Contains functions area(), integer_validator()"""
-    def area(self):
-        """Function not implemented yet"""
-        raise Exception("area() is not implemented")
+class Rectangle(BaseGeometry):
+    """Rectangle data inherits from BaseGeometry
+    """
 
-    def integer_validator(self, name, value):
-        """Function that validates `value`"""
-        if type(value) != int:
-            raise TypeError(name + " must be an integer")
-        if value <= 0:
-            raise ValueError(name + " must be greater than 0")
+    def __init__(self, width, height):
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
+        self.__width = width
+        self.__height = height
+
