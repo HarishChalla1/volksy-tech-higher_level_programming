@@ -1,0 +1,29 @@
+Python is a popular programming language. It was created by Guido van Rossum, and launched in 1991.
+Applications:
+web development (server-side),
+software development,
+mathematics,
+system scripting.
+
+What can Python do?
+Python can be used on a server to create web applications.
+Python can be used alongside software to create workflows.
+Python can connect to database systems. It can also read and modify files.
+Python can be used to handle big data and perform complex mathematics.
+Python can be used for rapid prototyping, or for production-ready software development.
+
+
+Python id() function returns an identity.
+
+Mutable Definition
+Mutable is when something is changeable or has the ability to change. In Python, ‘mutable’ is the ability of objects to change their values. These are often the objects that store a collection of data.
+
+Immutable Definition
+Immutable is the when no change is possible over time. In Python, if the value of an object cannot be changed over time, then it is known as immutable. Once created, the value of these objects is permanent.
+
+
+The following are the different types of Python Functions:
+Python Built-in Functions.
+Python Recursion Functions.
+Python Lambda Functions.
+Python User-defined Functions 
