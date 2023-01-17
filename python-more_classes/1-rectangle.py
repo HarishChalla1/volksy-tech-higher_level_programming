@@ -4,11 +4,12 @@
 
 class Rectangle:
     """A class named Rectangle
+
     Attributes:
     attr1(width): width of rectangle
     attr2(height): height of rectangle
     """
-    def _init_(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
 
