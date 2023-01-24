@@ -7,7 +7,6 @@ import csv
 from os import path
 
 
-
 class Base:
     """A class named Base
     Attributes:
