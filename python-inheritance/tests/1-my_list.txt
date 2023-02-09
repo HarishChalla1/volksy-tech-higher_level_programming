@@ -1,36 +1,48 @@
-Using class ``MyList``
------------------------
+>>> MyList = __import__('1-my_list').MyList
+>>> d = MyList()
+>>> isinstance(d, list)
+True
+>>> my_list = MyList()
+>>> my_list.append(5)
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> print(my_list)
+[5, 1, 4]
+>>> my_list.print_sorted()
+[1, 4, 5]
+>>> print(my_list)
+[5, 1, 4]
 
-Class MyList can store a list
-Has a function print_sorted to print the list in MyList sorted
+Test 2: Empty list
+>>> c = MyList()
+>>> print(c)
+[]
+>>> c.print_sorted()
+[]
 
-First import class ``MyList``
+Test 2: Empty list
+>>> e = MyList()
+>>> issubclass(type(e), list)
+True
 
-    >>> MyList = __import__('1-my_list').MyList
+Test 2: Empty list
+>>> a = MyList()
+>>> a.append(-5)
+>>> a.append(-4)
+>>> a.append(-10)
+>>> print(a)
+[-5, -4, -10]
+>>> a.print_sorted()
+[-10, -5, -4]
+>>> print(a)
+[-5, -4, -10]
 
-Now use it:
-
-Basic MyList usage (pos, neg, zero):
-    >>> my_list = MyList()
-    >>> my_list.append(-1)
-    >>> my_list.append(4)
-    >>> my_list.append(3)
-    >>> my_list.append(0)
-    >>> print(my_list)
-    [-1, 4, 3, 0]
-
-Basic print_sorted usage:
-    >>> my_list.print_sorted()
-    [-1, 0, 3, 4]
-
-Big int MyList usage:
-    >>> my_list = MyList()
-    >>> my_list.append(999999999999)
-    >>> my_list.append(-1)
-    >>> my_list.append(0)
-    >>> print(my_list)
-    [999999999999, -1, 0]
-
-Big int print_sorted usage:
-    >>> my_list.print_sorted()
-    [-1, 0, 999999999999]
+Test 2: Empty list
+>>> b = MyList()
+>>> b.append(-20)
+>>> b.append(-4)
+>>> b.append(-10)
+>>> print(b)
+[-20, -4, -10]
+>>> b.print_sorted()
+[-20, -10, -4]
