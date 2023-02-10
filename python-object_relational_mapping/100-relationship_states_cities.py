@@ -3,7 +3,8 @@
 # from the database hbtn_0e_100_usa.
 # Usage: ./100-relationship_states_cities.py <mysql username> /
 #                                            <mysql password> /
-#                                            <database name>
+#                   <database name>
+`
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -19,4 +20,4 @@ if __name__ == "__main__":
     session = Session()
 
     session.add(City(name="San Francisco", state=State(name="California")))
-    session.commit()
+    session.commit(i)
