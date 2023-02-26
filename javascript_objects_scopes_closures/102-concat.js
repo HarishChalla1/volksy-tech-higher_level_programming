@@ -1,4 +1,4 @@
- #!/usr/bin/node
+^#!/usr/bin/node
 // JS Script
 const fs = require('fs');
 const text1 = fs.readFileSync(process.argv[2], 'utf-8');
