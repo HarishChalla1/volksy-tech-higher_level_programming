@@ -1,35 +1,23 @@
 #!/usr/bin/python3
-""" text_indentation returns "text" in the specified format:
-2 newlines after each ['.', '?', ':']
+"""
+This is the "text indentation" module.
+The text indentation module supplies one function, text_indentation().
 """
 
 
-def text_iclearndentation(text):
-    """ prints "text" with 2 newlines after each of these char: ['.', '?', ':']
-    checks if "text" is a str
-    first loop removes spaces after each required chars
-    second loop adds 2 newlines after each required chars
+def text_indentation(text):
     """
-    if type(text) != str:
-        raise TypeError("text must be a string")
-    toCatAfter = ['.', '?', ':']
+    Print a text with 2 new lines after these characters: . ? :
+    """
 
-    # Removes the space after special chars
-    idx = 0
-    for items in text:
-        if items in toCatAfter:
-            if text[idx + 1] == " ":
-                text = text[:idx + 1] + text[idx + 2:]
-        else:
-            idx += 1
+    if type(text) is not str:
+        raise TypeError('text must be a string')
 
-    # Cats '\n\n' after the special char with removed space
-    idx = 0
-    for items in text:
-        if items in toCatAfter:
-            text = text[:idx + 1] + '\n\n' + text[idx + 1:]
-            idx += 3
-        else:
-            idx += 1
-
-    print(text, end='')
+    newline = True
+    for c in text:
+        if not (newline and c == ' '):
+            print(c, end='')
+            newline = False
+            if c in '.?:':
+                print('\n')
+                newline = True
